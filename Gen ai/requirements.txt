@@ -1,0 +1,16 @@
+langchain
+langchain-core
+langchain-community
+langchain-huggingface
+langgraph
+langchain-openai
+langchain-google-genai
+langchain-groq
+langchain-mistralai
+python-dotenv
+faiss-cpu
+tiktoken
+fastapi
+uvicorn
+requests
+streamlit

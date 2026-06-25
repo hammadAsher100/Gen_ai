@@ -1,0 +1,114 @@
+=== FILE: software_design_patterns.txt ===
+
+# Software Engineering and Design Patterns
+
+## What Are Design Patterns?
+
+Design patterns are reusable solutions to commonly occurring problems in software design. They are not finished code but templates or blueprints that can be applied to specific situations. The concept was popularized by the "Gang of Four" (GoF) — Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides — in their landmark 1994 book "Design Patterns: Elements of Reusable Object-Oriented Software."
+
+Design patterns are typically divided into three categories:
+1. **Creational Patterns** — Deal with object creation mechanisms
+2. **Structural Patterns** — Deal with object composition and relationships
+3. **Behavioral Patterns** — Deal with communication between objects
+
+---
+
+## Creational Design Patterns
+
+### Singleton Pattern
+
+The Singleton pattern ensures that a class has only one instance and provides a global point of access to it. Use cases include logging, configuration management, and connection pooling.
+
+**Key characteristics:**
+- Private constructor
+- Static method to get instance
+- Thread-safe implementations may use double-checked locking or an inner holder class
+
+**Caution**: Overuse of Singleton can introduce hidden dependencies and make unit testing difficult.
+
+### Factory Method Pattern
+
+The Factory Method defines an interface for creating an object but lets subclasses decide which class to instantiate. This promotes loose coupling by eliminating the need to bind application-specific classes into the code.
+
+**When to use:**
+- When the exact type of object to create isn't known until runtime
+- When subclasses should control object creation
+- When you want to localize knowledge of which class gets created
+
+### Builder Pattern
+
+The Builder pattern separates the construction of a complex object from its representation. It is especially useful when an object requires multiple steps to construct or has many optional parameters.
+
+Example use case: Building a complex SQL query, constructing HTTP requests, or assembling configuration objects with many optional fields.
+
+---
+
+## Structural Design Patterns
+
+### Adapter Pattern
+
+The Adapter pattern allows incompatible interfaces to work together. It acts as a bridge between two incompatible interfaces, much like a power adapter that allows a US plug to work in a European socket.
+
+### Decorator Pattern
+
+The Decorator pattern attaches additional responsibilities to an object dynamically. It provides a flexible alternative to subclassing for extending functionality. In Python, decorators are a built-in language feature used extensively in web frameworks like Flask and Django.
+
+### Facade Pattern
+
+The Facade pattern provides a simplified interface to a complex subsystem. Instead of exposing all the internals of a library or framework, a Facade presents a clean, high-level API. This reduces dependency on internal implementations and improves readability.
+
+---
+
+## Behavioral Design Patterns
+
+### Observer Pattern
+
+The Observer pattern defines a one-to-many dependency so that when one object changes state, all its dependents are notified and updated automatically. This is the foundation of event-driven programming and is used heavily in:
+- GUI frameworks
+- Messaging systems (Pub/Sub)
+- Reactive programming (RxJS, ReactiveX)
+
+### Strategy Pattern
+
+The Strategy pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Clients can switch algorithms at runtime without changing the objects that use them.
+
+**Real-world analogy**: A navigation app that allows users to choose between "fastest route," "shortest route," or "avoid highways."
+
+### Command Pattern
+
+The Command pattern encapsulates a request as an object, allowing for parameterization of clients, queuing of requests, and support for undoable operations. It is widely used in:
+- Undo/Redo functionality in editors
+- Transaction management in databases
+- Task scheduling systems
+
+---
+
+## SOLID Principles
+
+SOLID is an acronym for five principles of object-oriented design that promote maintainability and scalability:
+
+- **S — Single Responsibility Principle**: A class should have only one reason to change.
+- **O — Open/Closed Principle**: Software entities should be open for extension but closed for modification.
+- **L — Liskov Substitution Principle**: Subtypes must be substitutable for their base types.
+- **I — Interface Segregation Principle**: Clients should not be forced to depend on interfaces they do not use.
+- **D — Dependency Inversion Principle**: High-level modules should not depend on low-level modules; both should depend on abstractions.
+
+---
+
+## Noise Section (Irrelevant Content for RAG Testing)
+
+Butterflies migrate thousands of miles each year, following magnetic fields and the position of the sun. The Roman Colosseum could seat up to 80,000 spectators. Coffee was first discovered in Ethiopia and later spread to the Arabian Peninsula. These facts are unrelated to software engineering and are inserted to evaluate retrieval precision and noise filtering capability.
+
+---
+
+## Architectural Patterns
+
+Beyond class-level design patterns, architectural patterns define the structure of entire systems:
+
+- **MVC (Model-View-Controller)**: Separates data, UI, and control logic.
+- **Microservices**: Decomposes applications into small, independently deployable services.
+- **Event-Driven Architecture**: Components communicate through events rather than direct calls.
+- **CQRS (Command Query Responsibility Segregation)**: Separates read and write operations for scalability.
+- **Hexagonal Architecture (Ports and Adapters)**: Isolates core business logic from external systems.
+
+Understanding both low-level design patterns and high-level architectural patterns is essential for building robust, maintainable software systems at scale.

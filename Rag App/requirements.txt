@@ -1,0 +1,55 @@
+# Core LLM APIs
+openai>=1.30.0
+mistralai>=0.4.0
+
+# LangChain ecosystem (RAG orchestration)
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-core>=0.2.0
+langchain-openai>=0.1.0
+
+# Vector Database
+chromadb>=0.5.0
+
+# Embeddings (local + HuggingFace support)
+sentence-transformers>=2.7.0
+transformers>=4.41.0
+torch>=2.2.0
+
+# Document loaders & parsing
+pypdf>=4.2.0
+pdfplumber>=0.11.0
+unstructured>=0.14.0
+python-docx>=1.1.0
+
+# Text splitting
+tiktoken>=0.7.0
+
+# API & backend (optional but common)
+fastapi>=0.111.0
+uvicorn>=0.30.0
+
+# Environment variables
+python-dotenv>=1.0.1
+
+# Data handling
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Logging & utilities
+loguru>=0.7.2
+
+# HTTP requests
+requests>=2.32.0
+
+# Optional: evaluation & monitoring
+ragas>=0.1.7
+
+# Optional: UI (if building frontend quickly)
+streamlit>=1.35.0
+
+# Optional: caching
+diskcache>=5.6.3
+
+# Optional: async support
+aiohttp>=3.9.5
