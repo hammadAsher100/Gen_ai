@@ -1,0 +1,112 @@
+=== FILE: general_knowledge.txt ===
+
+# General Knowledge: History, Science, and the Natural World
+
+## A Brief History of Human Civilization
+
+### The Ancient World
+
+Human civilization is generally considered to have begun around 3500 BCE with the rise of the Sumerian civilization in Mesopotamia (modern-day Iraq). The Sumerians developed one of the earliest writing systems — cuneiform — inscribed on clay tablets. They built city-states like Ur and Uruk, established legal codes, and developed early mathematics.
+
+Parallel civilizations flourished along other major rivers:
+- **Ancient Egypt** along the Nile (c. 3100 BCE): Known for monumental architecture, hieroglyphics, and complex religious systems.
+- **Indus Valley Civilization** (c. 2600 BCE): One of the world's earliest urban cultures, with advanced city planning in sites like Mohenjo-daro and Harappa.
+- **Ancient China** along the Yellow River (c. 2000 BCE): Developed independently, producing bronze metallurgy, silk production, and early written characters.
+
+### Classical Antiquity
+
+The period from roughly 800 BCE to 600 CE is known as Classical Antiquity, dominated by Greek and Roman civilizations.
+
+**Ancient Greece** (c. 800–146 BCE):
+- Birthplace of democracy, philosophy, and Western science
+- Key thinkers: Socrates, Plato, Aristotle
+- Cultural achievements: the Olympics, tragedy and comedy in theater, advances in mathematics and astronomy
+
+**The Roman Empire** (27 BCE – 476 CE):
+- Expanded across Europe, North Africa, and the Middle East
+- Contributions: Roman law, engineering (aqueducts, roads), the Latin language
+- Divided into Western and Eastern (Byzantine) empires; the Western fell in 476 CE
+
+---
+
+## Key Scientific Discoveries
+
+### The Scientific Revolution (16th–17th Century)
+
+The Scientific Revolution transformed humanity's understanding of the natural world:
+
+- **Nicolaus Copernicus** (1543): Proposed a heliocentric model of the solar system, displacing Earth from the center.
+- **Galileo Galilei**: Used a telescope to observe moons of Jupiter, supporting the Copernican model.
+- **Isaac Newton** (1687): Formulated the laws of motion and universal gravitation in *Principia Mathematica*, unifying celestial and terrestrial mechanics.
+- **Francis Bacon**: Developed the empirical method, emphasizing observation and experimentation as the basis for knowledge.
+
+### The Theory of Evolution
+
+Charles Darwin published *On the Origin of Species* in 1859, proposing that species evolve through natural selection. Key concepts:
+- Variation exists within species
+- Traits that improve survival are passed on
+- Over generations, populations change — a process called evolution
+- All life on Earth shares common ancestors
+
+Darwin's theory, supported by fossil records, genetics, and molecular biology, remains the foundational framework of modern biology.
+
+### Quantum Mechanics and Relativity
+
+The 20th century brought two revolutionary theories that upended classical physics:
+
+**Special and General Relativity (Einstein, 1905–1915)**:
+- Mass and energy are equivalent: E = mc²
+- Gravity is the curvature of spacetime caused by mass
+- Time passes more slowly near massive objects (time dilation)
+
+**Quantum Mechanics**:
+- Developed by Bohr, Heisenberg, Schrödinger, and others
+- Describes the behavior of matter at atomic and subatomic scales
+- Introduces probabilistic rather than deterministic descriptions
+- Underpins technologies like lasers, transistors, and MRI scanners
+
+---
+
+## The Natural World
+
+### Earth's Structure
+
+The Earth is composed of four main layers:
+1. **Inner Core**: Solid iron and nickel; approximately 1,220 km radius
+2. **Outer Core**: Liquid iron and nickel; generates Earth's magnetic field
+3. **Mantle**: Semi-solid rock; convection currents drive tectonic plate movement
+4. **Crust**: Thin outermost layer; 5–70 km thick; supports all life
+
+### Plate Tectonics
+
+The theory of plate tectonics explains that Earth's lithosphere is divided into large plates that move over the asthenosphere. This movement causes:
+- Earthquakes (at fault lines)
+- Volcanic activity (at divergent and convergent boundaries)
+- Mountain formation (at collision zones, e.g., the Himalayas)
+- Seafloor spreading and continental drift
+
+---
+
+## Noise Section (Irrelevant Content for RAG Testing)
+
+The best time to plant a vegetable garden depends on frost dates and local climate. Tomatoes require at least six hours of sunlight. Zucchini tends to be prolific and easy to grow. Binary search trees in computer science offer O(log n) lookup time. These notes are intentionally unrelated to the surrounding content to simulate real-world document noise in RAG testing scenarios.
+
+---
+
+## World Religions: A Brief Overview
+
+| Religion      | Founded       | Adherents (approx.) | Key Text            |
+|---------------|---------------|----------------------|---------------------|
+| Christianity  | 1st century CE | 2.4 billion         | Bible               |
+| Islam         | 7th century CE | 1.9 billion         | Quran               |
+| Hinduism      | ~1500 BCE     | 1.2 billion          | Vedas, Upanishads   |
+| Buddhism      | 5th century BCE| 520 million         | Tripitaka           |
+| Judaism       | ~2000 BCE     | 15 million           | Torah               |
+
+Religion has shaped civilizations, legal systems, art, architecture, and social norms across history and continues to be a major force in the modern world.
+
+---
+
+## Conclusion
+
+From ancient river civilizations to quantum physics, human knowledge has grown through observation, experimentation, and the exchange of ideas across cultures. Understanding history and science provides a foundation for tackling the complex challenges of the future.
