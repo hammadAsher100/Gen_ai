@@ -1,0 +1,57 @@
+# Core LangChain
+langchain
+langchain-core
+langchain-community
+langgraph
+
+# Model Providers
+langchain-openai
+langchain-google-genai
+langchain-groq
+langchain-mistralai
+langchain-huggingface
+
+# Embeddings & Transformers
+sentence-transformers
+transformers
+torch
+accelerate
+
+# Vector Databases
+chromadb
+faiss-cpu
+
+# Tokenization
+tiktoken
+
+# Document Loaders
+pypdf
+pymupdf
+unstructured
+python-docx
+docx2txt
+pandas
+openpyxl
+tabulate
+beautifulsoup4
+lxml
+html5lib
+
+# Environment Variables
+python-dotenv
+
+# APIs & Backend
+fastapi
+uvicorn
+requests
+httpx
+
+# UI
+streamlit
+
+# Utilities
+numpy
+scikit-learn
+tqdm
+pydantic
+typing-extensions
