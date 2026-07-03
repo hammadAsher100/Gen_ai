@@ -32,7 +32,8 @@ llm = ChatMistralAI(model="mistral-medium-2604", temperature=0)
 prompt = ChatPromptTemplate.from_messages(
   [
    ("system", """You are a helfpul assistant that provides information about the qeueries asked according to the provided context. 
-    If the answer is not present in the context, you say 'I don't know'"""), 
+    If the answer is not present in the context, refine it and combine it with the content relevant to the document.
+    But, if it is tottaly out of context, then say "I am sorry, I don't have any information regarding this query." and do not make up any answer."""), 
    ("user", 
     """
     Context : {context}
