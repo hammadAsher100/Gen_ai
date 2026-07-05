@@ -38,4 +38,5 @@ seq2 = RunnableParallel(
 chain = seq | seq2
 
 result = chain.invoke({"code": "Write a code to make fibonacci series"})
-print(result)
+print(result['code'])
+print(result['explanation'])
