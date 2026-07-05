@@ -1,4 +1,4 @@
-from langchain_core.runnables import RunnablePassthrough
+from langchain_core.runnables import RunnablePassthrough, RunnableParallel
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 load_dotenv()
@@ -14,19 +14,28 @@ parser = StrOutputParser()
 
 code_prompt = ChatPromptTemplate.from_messages(
     [
-      ("system", "You are a senior software engineer, that will write code for the user based on their request. You will only respond with code, and nothing else. Only write code in python"),
-      ("human", "{input}")
+      ("system", "You are a senior software engineer, that will write code for the user based on their request. You will only respond with code, and nothing else. Only write code in python. In a structurized manner"),
+      ("human", "{code}")
     ]
 )
 
 explain_prompt = ChatPromptTemplate.from_messages(
     [
       ("system", "You are a senior software engineer, that will explain code for the user based on their request. You will only respond with an explanation of the code, and nothing else. Only write in english"),
-      ("human", "{input}")
+      ("human", "Explain the following code in simple terms: {code}")
     ]
 )
 
-seq = code_prompt | llm | parser | explain_prompt | llm | parser
+seq = code_prompt | llm | parser 
 
-result = seq.invoke("Write a code to make fibonacci series")
+seq2 = RunnableParallel(
+  {
+    "code": RunnablePassthrough(),
+    "explanation": explain_prompt | llm | parser
+  }
+)
+
+chain = seq | seq2
+
+result = chain.invoke({"code": "Write a code to make fibonacci series"})
 print(result)
