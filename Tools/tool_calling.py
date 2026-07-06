@@ -1,3 +1,5 @@
+from pymupdf import message
+
 from dotenv import load_dotenv
 load_dotenv()
 from langchain_groq import ChatGroq
@@ -19,15 +21,23 @@ def get_text_length(text: str) -> int:
     """
     return len(text)
   
+tools = {
+  "get_text_length": get_text_length
+}
 llm = ChatGroq(
     model="llama-3.3-70b-versatile"
 )
-
 llm_with_tool = llm.bind_tools([get_text_length])
 messages = []
-query = HumanMessage("What is the length of the text 'Hello, world!'?")
-
+prompt = input("Enter your prompt: ")
+query = HumanMessage(prompt)
 messages.append(query)
 response = llm_with_tool.invoke(messages)
 messages.append(response)
-print(response)
+if response.tool_calls:
+  tool_name = response.tool_calls[0]["name"]
+  tool_message = tools[tool_name].invoke(response.tool_calls[0])
+  messages.append(tool_message)
+
+result = llm_with_tool.invoke(messages)
+print(result)
