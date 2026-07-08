@@ -8,33 +8,20 @@ st.set_page_config(
     layout="wide"
 )
 
-# 2. Sidebar Configuration
-with st.sidebar:
-    st.title("🤖 AI Agent Core")
-    st.info(
-        """
-        **Powered by:**
-        * Mistral AI
-        * OpenWeather API
-        * Tavily Search API
-        * LangChain & LangGraph
-        """
-    )
-
-# 3. Main UI Header
+# 2. Main UI Header
 st.title("🌤️ AI City Weather & News Agent")
 st.write(
     "Enter the name of any city, and the AI agent will automatically orchestrate "
     "tool calls to retrieve live weather data and top current news."
 )
 
-# 4. Input Section
+# 3. Input Section
 city = st.text_input(
     "City Name",
     placeholder="e.g., Tokyo, New York, Karachi"
 )
 
-# 5. Agent Execution & Results
+# 4. Agent Execution & Results
 if st.button("Search", use_container_width=True):
     if not city.strip():
         st.warning("Please enter a valid city name.")
