@@ -41,3 +41,4 @@ if response.tool_calls:
 
 result = llm_with_tool.invoke(messages)
 print(result)
+print("--------------------------------------------------------------------")

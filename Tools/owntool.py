@@ -40,11 +40,9 @@ def summarize_news_article(article: str) -> str:
     news_result = search_tool.run(
         "Latest news on AI advancements"
     )
-
     result = chain.invoke({"article": news_result})
-
     return result
   
-  
+
 print(summarize_news_article.invoke({"article": "The latest news on AI advancements includes breakthroughs in natural language processing, computer vision, and reinforcement learning. Researchers have developed new models that can understand and generate human-like text, recognize objects in images with high accuracy, and learn complex tasks through trial and error. These advancements are expected to have significant impacts on various industries, including healthcare, finance, and transportation."}))
 print(summarize_news_article.description)
